@@ -21,7 +21,7 @@ interface SbomItem {
 
 export default async function handler(repository: string, branch: string): Promise<SbomItem[]> {
   try {
-    const response = await fetch('http://localhost:8899/depcheck', {
+    const response = await fetch('/api/depcheck', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
