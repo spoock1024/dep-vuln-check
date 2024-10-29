@@ -5,7 +5,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:8899/:path*',
+        destination: 'http://localhost:9900/:path*',
       },
     ];
   },
