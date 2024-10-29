@@ -161,12 +161,12 @@ export default function Component() {
                     <TableCell className="font-medium">{item.dependency}</TableCell>
                     <TableCell>{item.version}</TableCell>
                     <TableCell>
-                      <Badge variant={item.depType === "Direct" ? "default" : "secondary"}>
+                      <Badge variant={item.depType === "Direct" ? ("default" as "default") : ("secondary" as "secondary")}>
                         {item.depType}
                       </Badge>
                     </TableCell>
                     <TableCell>
-                      <Badge variant={item.vulnerable === "Yes" ? "destructive" : "outline"}>
+                      <Badge variant={item.vulnerable === "Yes" ? ("destructive" as "destructive") : ("outline" as "outline")}>
                         {item.vulnerable}
                       </Badge>
                     </TableCell>
